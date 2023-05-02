@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Italianno&display=swap");
+:root {
+  --background: #fafafa;
+  --text: #747474;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  background: var(--background);
+  font-size: 1.8rem;
+  color: var(--text);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  margin-bottom: 6.5rem;
+}
+.logo {
+  font-family: "Italianno";
+  font-size: 3rem;
+}
+.logo span:nth-child(1) {
+  padding-right: 1rem;
+  position: relative;
+}
+.logo span:nth-child(1):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 75%;
+  width: 0.1rem;
+  opacity: 0.5;
+  background: var(--text);
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  padding-bottom: 0.4rem;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  border-bottom: 1px solid var(--text);
+}
+
+/* WORK section */
+.work {
+  padding: 0 0.1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  margin-bottom: 6.5rem;
+}
+.work-item {
+  width: 49%;
+  max-width: 50rem;
+  margin-bottom: 2rem;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.work-item img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.work-item:hover {
+  opacity: 0.9;
+}
+
+.about {
+  margin-left: 8rem;
+  max-width: 40rem;
+  margin-bottom: 4rem;
+}
+
+footer {
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
