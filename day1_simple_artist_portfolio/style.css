@@ -17,6 +17,7 @@ body {
   background: var(--background);
   font-size: 1.8rem;
   color: var(--text);
+  position: relative;
 }
 .container {
   max-width: 1000px;
@@ -96,11 +97,16 @@ header {
 
 footer {
   margin-left: 8rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 footer a {
   display: block;
   text-decoration: none;
   color: var(--text);
   margin-bottom: 0.2rem;
+}
+.dino-decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Open+Sans&display=swap");
+
+:root {
+  --primary: #fffd33;
+  --secondary: #c54f0b;
+  --text: #fefefe;
+  --border: #685f52;
+  --background: #878786;
+  --textOffset: #94a1b2;
+  --backgroundOffset: #535353;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
