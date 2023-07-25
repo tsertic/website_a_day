@@ -13,6 +13,7 @@ export const TodoList: React.FC<ITodoListProps> = ({ tasks }) => {
           <tr>
             <th>id</th>
             <th>task</th>
+            <th>action</th>
           </tr>
         </thead>
         <tbody>

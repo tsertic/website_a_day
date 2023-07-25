@@ -21,3 +21,15 @@ export const postNewTask = async (task: string): Promise<ITask> => {
   const newTodo = res.json();
   return newTodo;
 };
+
+export const updateTask = async (task: ITask) => {
+  const res = await fetch(`${BASE_URL}/${task.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(task),
+  });
+  const updatedTodo = res.json();
+  return updatedTodo;
+};
