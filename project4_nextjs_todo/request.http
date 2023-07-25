@@ -1,0 +1,35 @@
+#get
+#GET All tasks
+http://127.0.0.1:5678/tasks
+
+###
+#POST
+#Create task
+POST http://127.0.0.1:5678/tasks
+Content-Type: application/json
+
+{
+    "task":"buy banana"
+}
+
+###
+#GET
+#Get task by id
+GET http://127.0.0.1:5678/tasks/1
+
+###
+
+#DELETE
+#Delete task by id
+DELETE http://127.0.0.1:5678/tasks/1
+
+###
+
+#PUT
+#Update task
+PUT http://127.0.0.1:5678/tasks/1
+Content-Type: application/json
+
+{
+    "task":"Buy bread and sugar"
+}
