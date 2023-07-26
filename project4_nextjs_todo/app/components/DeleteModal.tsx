@@ -6,39 +6,40 @@ interface IEditModal {
 import { ITask } from "@/types/tasks";
 import React, { FormEventHandler, ReactEventHandler, useState } from "react";
 import { Modal } from "./Modal";
-import { updateTask } from "@/api";
+import { deleteTask, updateTask } from "@/api";
 import { useRouter } from "next/navigation";
 
-export const EditModal: React.FC<IEditModal> = ({
+export const DeleteModal: React.FC<IEditModal> = ({
   task,
   modalOpen,
   toggleModalHandler,
 }) => {
   const router = useRouter();
   const [taskValue, setTaskValue] = useState(task.task);
-  const handleFormSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
-    e.preventDefault();
-    await updateTask({ task: taskValue, id: task.id });
+  const handleDeleteTask = async () => {
+    await deleteTask(task.id);
     toggleModalHandler();
     router.refresh();
   };
+
   return (
     <Modal modalOpen={modalOpen} closeModal={toggleModalHandler}>
-      <form onSubmit={handleFormSubmit}>
-        <h3 className="font-bold text-lg">Edit Task</h3>
+      <div>
+        <h3 className="font-bold text-lg">Delete task?</h3>
         <div className="modal-action">
-          <input
-            value={taskValue}
-            onChange={(e) => setTaskValue(e.target.value)}
-            type="text"
-            placeholder={taskValue}
-            className="input input-bordered w-full"
-          />
-          <button type="submit" className="btn">
-            Submit
+          <button onClick={handleDeleteTask} className="btn">
+            Yes
+          </button>
+          <button
+            onClick={() => {
+              toggleModalHandler();
+            }}
+            className="btn"
+          >
+            No
           </button>
         </div>
-      </form>
+      </div>
     </Modal>
   );
 };

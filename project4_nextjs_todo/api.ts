@@ -33,3 +33,11 @@ export const updateTask = async (task: ITask) => {
   const updatedTodo = res.json();
   return updatedTodo;
 };
+
+export const deleteTask = async (taskId: string) => {
+  const res = await fetch(`${BASE_URL}/${taskId}`, {
+    method: "DELETE",
+  });
+  const deletedTask = res.json();
+  return deletedTask;
+};

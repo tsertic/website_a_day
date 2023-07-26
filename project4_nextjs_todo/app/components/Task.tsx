@@ -3,13 +3,14 @@ import { ITask } from "@/types/tasks";
 import React, { useState } from "react";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 import { EditModal } from "./EditModal";
+import { DeleteModal } from "./DeleteModal";
 
 export const Task: React.FC<{ task: ITask }> = ({ task }) => {
   const [editModalOpen, setEditModalOpen] = useState(false);
   const [deleteModalOpen, setDeleteModalOpen] = useState(false);
 
   const toggleEditModal = () => setEditModalOpen(!editModalOpen);
-  const toggleDeleteModal = () => setDeleteModalOpen(!editModalOpen);
+  const toggleDeleteModal = () => setDeleteModalOpen(!deleteModalOpen);
   return (
     <>
       <tr>
@@ -33,6 +34,11 @@ export const Task: React.FC<{ task: ITask }> = ({ task }) => {
         task={task}
         modalOpen={editModalOpen}
         toggleModalHandler={toggleEditModal}
+      />
+      <DeleteModal
+        task={task}
+        modalOpen={deleteModalOpen}
+        toggleModalHandler={toggleDeleteModal}
       />
     </>
   );
