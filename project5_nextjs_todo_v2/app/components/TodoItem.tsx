@@ -15,16 +15,18 @@ export const TodoItem: React.FC<ITodoItem> = ({ todo }) => {
   };
   return (
     <tr>
-      <div className="form-control">
-        <div className="cursor-pointer label">
-          <input
-            onClick={handleCheckTodo}
-            type="checkbox"
-            checked={todo.finished}
-            className="checkbox checkbox-success"
-          />
+      <td>
+        <div className="form-control">
+          <div className="cursor-pointer label">
+            <input
+              onClick={handleCheckTodo}
+              type="checkbox"
+              checked={todo.finished}
+              className="checkbox checkbox-success"
+            />
+          </div>
         </div>
-      </div>
+      </td>
       <td className="w-full">{todo.text}</td>
       <td className="flex gap-3 justify-around">
         <AiOutlineEdit cursor="pointer" size={20} />

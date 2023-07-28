@@ -9,6 +9,11 @@
       "finished": true,
       "text": "Test Todo",
       "id": "1"
+    },
+    {
+      "id": "4c062426-6553-464d-a710-bdb909c8a93e",
+      "text": "drink coffee",
+      "finished": true
     }
   ]
 }
