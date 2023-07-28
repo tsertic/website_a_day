@@ -1,7 +1,11 @@
+interface ITodoList {
+  todos: ITodo[];
+}
 import React from "react";
 import { TodoItem } from "./TodoItem";
+import { ITodo } from "@/types/todo";
 
-export const TodoList = () => {
+export const TodoList: React.FC<ITodoList> = ({ todos }) => {
   return (
     <div className="overflow-x-auto">
       <table className="table table-zebra">
@@ -15,7 +19,10 @@ export const TodoList = () => {
         </thead>
         <tbody>
           {/* row 1 */}
-          <TodoItem />
+          {todos &&
+            todos.map((todo) => {
+              return <TodoItem todo={todo} key={todo.id} />;
+            })}
         </tbody>
       </table>
     </div>
