@@ -1,3 +1,14 @@
 {
-  "todos": [{ "id": "131314", "text": "Read book", "finished": false }]
+  "todos": [
+    {
+      "id": "131314",
+      "text": "Read book",
+      "finished": false
+    },
+    {
+      "finished": true,
+      "text": "Test Todo",
+      "id": "1"
+    }
+  ]
 }

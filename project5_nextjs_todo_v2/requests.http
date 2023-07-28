@@ -1,0 +1,48 @@
+
+
+//@GET
+// http://127.0.0.1:8888/todos
+// Get All Todos
+GET http://127.0.0.1:8888/todos
+
+###
+
+
+//@POST
+// http://127.0.0.1:8888/todos
+// Create new todo
+POST http://127.0.0.1:8888/todos
+Content-Type: application/json
+
+{
+    "id":"1",
+    "text":"Test Todo",
+    "finished":false
+}
+
+###
+
+//@GET
+// http://127.0.0.1:8888/todos/:id
+// Get todo by id
+GET http://127.0.0.1:8888/todos/1
+
+###
+
+//@PUT
+// http://127.0.0.1:8888/todos/:id
+// Update todo 
+PUT http://127.0.0.1:8888/todos/1
+Content-Type: application/json
+
+{
+    "finished":true,
+    "text":"Test Todo"
+}
+
+###
+
+//@DELETE
+// http://127.0.0.1:8888/todos/:id
+// Delete todo
+DELETE http://127.0.0.1:8888/todos/1
