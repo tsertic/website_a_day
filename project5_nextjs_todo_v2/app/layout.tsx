@@ -14,8 +14,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  let themeDataPool = ["coffee", "winter", "luxury"];
   return (
-    <html lang="en" data-theme="luxury" className="bg-neutral">
+    <html
+      lang="en"
+      data-theme={themeDataPool[Math.floor(Math.random() * 2)]}
+      className="bg-neutral"
+    >
       <body className="bg-neutral">{children}</body>
     </html>
   );
