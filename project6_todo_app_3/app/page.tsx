@@ -1,12 +1,17 @@
 import { getAllTodos } from "@/api/todos";
-import Image from "next/image";
+import { ErrorReload } from "./components/ErrorReload";
+import { AddNewTodo } from "./components/AddNewTodo";
+import { TodosList } from "./components/TodosList";
 
 export default async function Home() {
-  const apiResponseTest = await getAllTodos();
-  console.log(apiResponseTest);
+  const { data, success, message } = await getAllTodos();
+  console.log(message);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Todo mongo app</h1>
+    <main className="flex flex-col items-center justify-between gap-5 w-[500px] mx-auto p-5 border-2 border-primary">
+      <h1 className="text-2xl text-center">Todo mongo app</h1>
+      <AddNewTodo success={success} />
+      {success && <TodosList />}
+      {!success && <ErrorReload message={message} />}
     </main>
   );
 }

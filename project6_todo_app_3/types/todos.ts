@@ -6,7 +6,7 @@ export interface ITodo {
 }
 export interface ITodosApiResponse {
   data: ITodo | ITodo[];
-  message?: string;
+  message: string;
   success: boolean;
   count?: number;
 }
