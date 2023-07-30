@@ -2,10 +2,17 @@ export interface ITodo {
   text: string;
   _id: string;
   createdAt: Date;
+  finished: boolean;
 }
-export interface ITodosApiResponse {
-  data: ITodo | ITodo[];
+export interface IGetAllTodosRes {
+  data: ITodo[];
   message: string;
   success: boolean;
-  count?: number;
+  count: number;
+}
+
+export interface IGetSingleTodoRes {
+  data: ITodo;
+  message: string;
+  success: boolean;
 }

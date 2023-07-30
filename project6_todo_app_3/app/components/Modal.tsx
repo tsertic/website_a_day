@@ -16,7 +16,7 @@ export const Modal: React.FC<IModal> = ({
       <div className="modal-box">{children}</div>
       <div
         onClick={handleCloseModal}
-        className="modal-backdrop bg-black/60"
+        className="modal-backdrop bg-black/60 cursor-pointer"
       ></div>
     </dialog>
   );

@@ -5,12 +5,11 @@ import { TodosList } from "./components/TodosList";
 
 export default async function Home() {
   const { data, success, message } = await getAllTodos();
-  console.log(message);
   return (
-    <main className="flex flex-col items-center justify-between gap-5 w-[500px] mx-auto p-5 border-2 border-primary">
-      <h1 className="text-2xl text-center">Todo mongo app</h1>
+    <main className="flex flex-col items-center justify-between gap-5 w-[500px] mx-auto p-5 ">
+      <h1 className="text-2xl text-center">Todo App</h1>
       <AddNewTodo success={success} />
-      {success && <TodosList />}
+      {success && <TodosList todos={data} />}
       {!success && <ErrorReload message={message} />}
     </main>
   );

@@ -1,40 +1,26 @@
+interface ITodosList {
+  todos: ITodo[];
+}
+import { ITodo } from "@/types/todos";
 import React from "react";
+import { TodoItem } from "./TodoItem";
 
-export const TodosList = () => {
+export const TodosList: React.FC<ITodosList> = ({ todos }) => {
   return (
-    <div className="overflow-x-auto">
-      <table className="table table-zebra">
+    <div className="overflow-x-auto w-full">
+      <table className="table table-zebra ">
         {/* head */}
         <thead>
           <tr>
             <th></th>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
+            <th>Todo</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          {/* row 1 */}
-          <tr>
-            <th>1</th>
-            <td>Cy Ganderton</td>
-            <td>Quality Control Specialist</td>
-            <td>Blue</td>
-          </tr>
-          {/* row 2 */}
-          <tr>
-            <th>2</th>
-            <td>Hart Hagerty</td>
-            <td>Desktop Support Technician</td>
-            <td>Purple</td>
-          </tr>
-          {/* row 3 */}
-          <tr>
-            <th>3</th>
-            <td>Brice Swyre</td>
-            <td>Tax Accountant</td>
-            <td>Red</td>
-          </tr>
+          {todos.map((todo, i) => {
+            return <TodoItem i={i + 1} todo={todo} key={todo._id} />;
+          })}
         </tbody>
       </table>
     </div>

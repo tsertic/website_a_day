@@ -5,7 +5,6 @@ interface INewTodoForm {
 }
 
 import { createNewTodo } from "@/api/todos";
-import { ITodo } from "@/types/todos";
 import React, { useState, ReactEventHandler } from "react";
 import { useRouter } from "next/navigation";
 export const NewTodoForm: React.FC<INewTodoForm> = ({ closeModal }) => {
@@ -18,13 +17,17 @@ export const NewTodoForm: React.FC<INewTodoForm> = ({ closeModal }) => {
     const success = res.success;
     console.log(success);
     if (success) {
+      setTextValue("");
       closeModal();
       router.refresh();
+    } else {
+      //TODO: better error handling,not important for this exercise
+      alert("Something went wrong");
     }
   };
   return (
     <form onSubmit={handleSubmitForm}>
-      <h2>Add New Todo</h2>
+      <h2 className="text-center text-lg mb-3">Add New Todo</h2>
       <div className="flex gap-4">
         <input
           value={textValue}
