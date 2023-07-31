@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kqw95n-dkaw37-aa98g1",
+    "name": "Wallmart",
+    "items": [
+      { "id": "ab53cd-dk3a2-dawf52", "name": "3% milk" },
+      { "id": "ac94gf-dkq27-dkaw13", "name": "6% milk" }
+    ],
+    "tint": 1
+  },
+  {
+    "id": "da8kfa-dj25ka-7aklfa",
+    "name": "SuperMart",
+    "items": [
+      { "id": "a2hgl9-daw12-dkal09", "name": "Eggs" },
+      { "id": "da0g21-akdjf0-daw98f", "name": "Bread" }
+    ],
+    "tint": 2
+  },
+  {
+    "id": "dkq23a-1kd8aj-daw573",
+    "name": "FreshMart",
+    "items": [
+      { "id": "da9gq3-daw86-daw175", "name": "Apples" },
+      { "id": "da2kpw-dwad7-daw98f", "name": "Bananas" }
+    ],
+    "tint": 3
+  },
+  {
+    "id": "dkq902-daw12-dkjw11",
+    "name": "GroceryZone",
+    "items": [
+      { "id": "da8ka3-adj37-daw82k", "name": "Rice" },
+      { "id": "da8ja2-daw25-daw01a", "name": "Pasta" }
+    ],
+    "tint": 4
+  }
+]
