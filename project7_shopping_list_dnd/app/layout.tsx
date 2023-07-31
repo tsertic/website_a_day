@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Todo App",
-  description: "Nextjs todo app using external api for handling data ",
+  title: "Shopping List",
+  description: "Drag and drop shopping list example",
 };
 
 export default function RootLayout({
@@ -15,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="jelly">
-      <body className="min-h-screen">{children}</body>
+    <html lang="en">
+      <body className="flex min-h-screen flex-col items-center justify-between">
+        {children}
+      </body>
     </html>
   );
 }
