@@ -1,7 +1,12 @@
+import { AddTodo } from "./_components/AddTodo";
+import { TodoList } from "./_components/TodoList";
+
 export default function Home() {
   return (
-    <main className="">
-      <h1>Todo List</h1>
+    <main className="max-w-[500px] w-full mx-auto bg-primary my-5 p-2 rounded-xl shadow-xl">
+      <h1 className="text-center text-xl">Todo List</h1>
+      <AddTodo />
+      <TodoList />
     </main>
   );
 }

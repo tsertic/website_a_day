@@ -1,3 +1,4 @@
+import { Provider } from "./_components/Provider";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -12,8 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" data-theme="cyberpunk">
+      <body>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }

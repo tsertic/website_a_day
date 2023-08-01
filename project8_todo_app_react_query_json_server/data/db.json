@@ -4,13 +4,13 @@
       "userId": 1,
       "id": 1,
       "title": "Walk the dog",
-      "completed": true
+      "completed": false
     },
     {
       "userId": 1,
       "id": 2,
       "title": "Buy groceries",
-      "completed": true
+      "completed": false
     },
     {
       "userId": 1,
@@ -119,12 +119,6 @@
       "id": 20,
       "title": "Visit the museum",
       "completed": true
-    },
-    {
-      "userId": 1,
-      "completed": false,
-      "title": "make project 8",
-      "id": 21
     }
   ]
 }
