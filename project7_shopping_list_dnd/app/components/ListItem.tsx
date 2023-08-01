@@ -10,7 +10,7 @@ export const ListItem: React.FC<IListItem> = ({ store }) => {
   return (
     <div>
       <h3 className=" rounded-xl text-center bg-gray-300 ">{name}</h3>
-      <Droppable droppableId={id}>
+      <Droppable droppableId={id} type="items">
         {(providerDrop) => {
           return (
             <div {...providerDrop.droppableProps} ref={providerDrop.innerRef}>

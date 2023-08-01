@@ -24,10 +24,38 @@ export default function Home() {
 
     if (sourceId === destinationId && sourceIndex === destinationIndex) return;
 
+    const reorderedStores = [...stores];
+    //Logic for reorderening stores
     if (type === "stores") {
-      const reorderedStores = [...stores];
       const [removedStore] = reorderedStores.splice(sourceIndex, 1);
       reorderedStores.splice(destinationIndex, 0, removedStore);
+      return setStores(reorderedStores);
+    }
+    //Logic for reordering items in same store or from one to another
+    if (type === "items") {
+      const sourceStoreIndex = reorderedStores.findIndex(
+        (store) => store.id === sourceId
+      );
+      const [removedItem] = reorderedStores[sourceStoreIndex].items.splice(
+        sourceIndex,
+        1
+      );
+      if (sourceId !== destinationId) {
+        const destinationStoreIndex = reorderedStores.findIndex(
+          (store) => store.id === destinationId
+        );
+        reorderedStores[destinationStoreIndex].items.splice(
+          destinationIndex,
+          0,
+          removedItem
+        );
+        return setStores(reorderedStores);
+      }
+      reorderedStores[sourceStoreIndex].items.splice(
+        destinationIndex,
+        0,
+        removedItem
+      );
       return setStores(reorderedStores);
     }
   };
