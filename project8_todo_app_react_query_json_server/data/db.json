@@ -1,0 +1,130 @@
+{
+  "todos": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Walk the dog",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Buy groceries",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "Read a book",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "Do laundry",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "Call a friend",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "title": "Go for a run",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "title": "Finish work project",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 8,
+      "title": "Cook dinner",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "title": "Pay bills",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 10,
+      "title": "Clean the house",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 11,
+      "title": "Go to the gym",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 12,
+      "title": "Write a blog post",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 13,
+      "title": "Attend a meeting",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 14,
+      "title": "Take a nap",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 15,
+      "title": "Water the plants",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 16,
+      "title": "Watch a movie",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 17,
+      "title": "Learn a new recipe",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 18,
+      "title": "Do yoga",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 19,
+      "title": "Go shopping",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 20,
+      "title": "Visit the museum",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "completed": false,
+      "title": "make project 8",
+      "id": 21
+    }
+  ]
+}
