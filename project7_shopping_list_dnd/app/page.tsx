@@ -7,6 +7,7 @@ import {
   DragDropContext,
   DropResult,
 } from "react-beautiful-dnd";
+import { ListItem } from "./components/ListItem";
 export default function Home() {
   const [stores, setStores] = useState(DATA);
   const handleOnDragEnd = (results: DropResult) => {
@@ -44,14 +45,12 @@ export default function Home() {
                       {(providerDrag) => {
                         return (
                           <div
-                            className=" "
+                            className=" mb-2"
                             {...providerDrag.dragHandleProps}
                             {...providerDrag.draggableProps}
                             ref={providerDrag.innerRef}
                           >
-                            <h3 className=" rounded-xl text-center bg-gray-300 mb-2">
-                              {store.name}
-                            </h3>
+                            <ListItem store={store} />
                           </div>
                         );
                       }}
