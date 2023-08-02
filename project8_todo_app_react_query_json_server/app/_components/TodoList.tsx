@@ -9,7 +9,9 @@ export const TodoList = () => {
     isError,
     error,
     data: todos,
-  } = useQuery("todos", getTodos);
+  } = useQuery("todos", getTodos, {
+    select: (todos) => todos.sort((a, b) => b.id - a.id),
+  });
 
   let content;
 

@@ -4,3 +4,9 @@ export interface ITodo {
   completed: boolean;
   id: number;
 }
+
+export interface ICreateTodo {
+  title: string;
+  userId: number;
+  completed: boolean;
+}

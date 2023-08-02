@@ -1,4 +1,4 @@
-import { ITodo } from "@/types/todos";
+import { ICreateTodo, ITodo } from "@/types/todos";
 import axios, { AxiosResponse } from "axios";
 export const todoApi = axios.create({
   baseURL: "http://127.0.0.1:5678/todos",
@@ -6,6 +6,10 @@ export const todoApi = axios.create({
 export const getTodos = async (): Promise<ITodo[]> => {
   const res = await todoApi.get("");
   return res.data;
+};
+
+export const createTodo = async (todo: ICreateTodo) => {
+  return await todoApi.post("", todo);
 };
 
 export const updateTodo = async (todo: ITodo): Promise<AxiosResponse> => {

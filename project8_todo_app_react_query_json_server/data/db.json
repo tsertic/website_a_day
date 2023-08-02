@@ -4,13 +4,13 @@
       "userId": 1,
       "id": 1,
       "title": "Walk the dog",
-      "completed": false
+      "completed": true
     },
     {
       "userId": 1,
       "id": 2,
       "title": "Buy groceries",
-      "completed": false
+      "completed": true
     },
     {
       "userId": 1,
@@ -112,13 +112,19 @@
       "userId": 1,
       "id": 19,
       "title": "Go shopping",
-      "completed": false
+      "completed": true
     },
     {
       "userId": 1,
       "id": 20,
       "title": "Visit the museum",
       "completed": true
+    },
+    {
+      "completed": true,
+      "userId": 1,
+      "title": "test todo",
+      "id": 21
     }
   ]
 }
