@@ -26,7 +26,7 @@ export const TodosList = () => {
         <table className="table table-zebra">
           <thead>
             <tr>
-              <th></th>
+              <th>Completed</th>
               <th>Task</th>
               <th>Action</th>
             </tr>
