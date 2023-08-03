@@ -1,0 +1,32 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "Finish practice project",
+      "description": "Complete the TODO list application using JSON data.",
+      "completed": false,
+      "due_date": "2023-08-10T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "task": "Study JavaScript",
+      "description": "Review JavaScript fundamentals and advanced concepts.",
+      "completed": false,
+      "due_date": "2023-08-15T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "task": "Learn React",
+      "description": "Start learning React framework for frontend development.",
+      "completed": false,
+      "due_date": "2023-08-20T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "task": "Write documentation",
+      "description": "Create a comprehensive documentation for the project.",
+      "completed": false,
+      "due_date": "2023-08-25T00:00:00.000Z"
+    }
+  ]
+}
