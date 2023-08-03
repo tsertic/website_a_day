@@ -10,6 +10,7 @@ import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 import { updateTodo } from "@/api/todos.api";
 import { Modal } from "../Modal";
 import { EditTodo } from "./EditTodo";
+import { DeleteTodo } from "./DeleteTodo";
 export const TodoItem: React.FC<ITodoItem> = ({ todo }) => {
   const [showEditTodo, setShowEditTodo] = useState(false);
   const [showDeleteTodo, setShowDeleteTodo] = useState(false);
@@ -50,6 +51,9 @@ export const TodoItem: React.FC<ITodoItem> = ({ todo }) => {
         />
         <Modal closeModal={toggleEditTodo} showModal={showEditTodo}>
           <EditTodo todo={todo} closeModal={toggleEditTodo} />
+        </Modal>
+        <Modal closeModal={toggleDeleteTodo} showModal={showDeleteTodo}>
+          <DeleteTodo todo={todo} closeModal={toggleDeleteTodo} />
         </Modal>
       </td>
     </tr>

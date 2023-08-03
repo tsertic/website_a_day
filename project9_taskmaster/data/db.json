@@ -1,13 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "task": "Finish practice project2",
-      "description": "Complete the TODO list application using JSON data.And more\nlorem ipsi\ndwadawd\ndawdadaddada \n\nlorem lorem ipsu upsu\ndawdwad",
-      "completed": true,
-      "due_date": "2023-10-01"
-    },
-    {
       "id": 2,
       "task": "Study JavaScript",
       "description": "Review JavaScript fundamentals and advanced concepts.",
