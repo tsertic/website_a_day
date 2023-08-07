@@ -5,8 +5,8 @@ import Logo from "@/public/logo-arch.svg";
 import { Button } from "./Button";
 export const Navbar = () => {
   return (
-    <div className="fixed w-full">
-      <nav className="mx-auto max-w-[1400px] px-4 py-[20px] flex justify-between items-center text-body">
+    <div className="fixed w-full bg-base-100 shadow-sm">
+      <nav className="mx-auto max-w-[1400px] px-[24px] py-[20px] flex justify-between items-center text-body">
         <div className="flex gap-[40px]">
           <a href="/">
             <Image
