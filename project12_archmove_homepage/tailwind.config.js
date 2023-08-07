@@ -42,5 +42,22 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        orange: {
+          primary: "#FD665E",
+          "primary-content": "#fff",
+
+          "base-100": "#fff",
+          "base-200": "#F0F0F0",
+          "base-content": "#111",
+          neutral: "#2C2C2C",
+        },
+      },
+      "dark",
+      "cmyk",
+    ],
+  },
 };
