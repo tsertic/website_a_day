@@ -1,3 +1,4 @@
+import { Inconsolata } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -27,18 +28,28 @@ const config: Config = {
     fontSize: {
       nav: [
         "14px",
-        { lineHeight: "40px", fontWeight: "500", letterSpacing: ".14px" },
+        { lineHeight: "1", fontWeight: "500", letterSpacing: ".14px" },
       ],
       btn: [
         "14px",
-        { lineHeight: "40px", fontWeight: "600", letterSpacing: ".14px" },
+        { lineHeight: "1", fontWeight: "400", letterSpacing: ".14px" },
+      ],
+      "body-mobile": [
+        "15px",
+        { lineHeight: "160%", fontWeight: "400", letterSpacing: ".16px" },
       ],
       body: [
         "20px",
         { lineHeight: "160%", fontWeight: "400", letterSpacing: ".16px" },
       ],
-      "2xl": ["40px", { fontWeight: "800", letterSpacing: " -1px" }],
-      "4xl": ["80px", { fontWeight: "800", letterSpacing: " -2px" }],
+      "2xl": [
+        "40px",
+        { lineHeight: "1", fontWeight: "600", letterSpacing: " -1px" },
+      ],
+      "4xl": [
+        "70px",
+        { lineHeight: "1", fontWeight: "600", letterSpacing: " -2px" },
+      ],
     },
     extend: {
       backgroundImage: {

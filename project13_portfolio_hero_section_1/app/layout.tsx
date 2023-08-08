@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "@next/font/local";
 import { Inconsolata } from "next/font/google";
 import { RQProvider } from "./_components/utils/RQProvider";
+import { Navigation } from "./_components/Navigation/Navigation";
 const inconsolata_f = Inconsolata({
   weight: ["400"],
   subsets: ["latin"],
@@ -51,9 +52,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${labGrotesque.variable} ${inconsolata_f.variable} bg-base-100 text-base-content`}
+        className={`${labGrotesque.variable} ${inconsolata_f.variable} bg-base-100 text-base-content font-labGrotesque text-body-mobile md:text-body `}
       >
-        <RQProvider>{children}</RQProvider>
+        <RQProvider>
+          <Navigation />
+          {children}
+        </RQProvider>
       </body>
     </html>
   );
