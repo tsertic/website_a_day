@@ -16,11 +16,32 @@ const config: Config = {
       sm: [".8rem", {}],
       md: ["1rem", {}],
       lg: ["1.2rem", {}],
+      xl: ["2rem", {}],
       body: ["1rem", {}],
       title: ["2rem", {}],
+    },
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "200": "200%",
+      "16": "4rem",
     },
     extend: {},
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["[data-theme=light]"],
+          primary: "#ffa387",
+          "primary-content": "#fff",
+        },
+      },
+      "dark",
+      "system",
+    ],
+  },
 };
 export default config;

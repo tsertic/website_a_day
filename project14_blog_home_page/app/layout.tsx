@@ -1,9 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto, Poppins } from "next/font/google";
+import ThemeProviderC from "./_components/util/ThemeProvider";
+import { ThemeSwitcher } from "./_components/UI/ThemeSwitcher";
+import { Navigation } from "./_components/Navigation/Navigation";
 
 const roboto = Roboto({
-  weight: ["400"],
+  weight: ["400", "900"],
   subsets: ["latin"],
   variable: "--font-roboto",
 });
@@ -26,7 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} ${poppins.variable}`}>
-        {children}
+        <ThemeProviderC>
+          <ThemeSwitcher />
+          <Navigation />
+          {children}
+        </ThemeProviderC>
       </body>
     </html>
   );
