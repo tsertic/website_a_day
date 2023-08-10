@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Mastering Responsive Web Design",
+      "author": "Tomislav Chatgpt",
+      "date": "2023-08-10",
+      "category": "Technology",
+      "tags": ["front-end", "web design", "responsive", "CSS"],
+      "short_preview": "Delve into the world of responsive web design and learn the intricacies of creating layouts that adapt seamlessly to different screen sizes. Explore the power of CSS media queries, flexible grids, and fluid images to ensure your websites look stunning on every device.",
+      "content": "In the rapidly evolving landscape of web..."
+    },
+    {
+      "id": 2,
+      "title": "Exploring Modern JavaScript Frameworks",
+      "author": "Tomislav Chatgpt",
+      "date": "2023-08-12",
+      "category": "Technology",
+      "tags": ["front-end", "JavaScript", "frameworks", "React", "Vue"],
+      "short_preview": "Embark on a journey through the realm of modern JavaScript frameworks. From the component-based architecture of React to the reactive magic of Vue.js, discover how these tools streamline front-end development and empower developers to build dynamic and interactive web applications.",
+      "content": "Front-end development has been transformed..."
+    },
+    {
+      "id": 3,
+      "title": "Optimizing Performance for Web Applications",
+      "author": "Tomislav Chatgpt",
+      "date": "2023-08-15",
+      "category": "Technology",
+      "tags": ["front-end", "performance", "optimization", "web applications"],
+      "short_preview": "Unlock the secrets to achieving blazing-fast performance for your web applications. From image optimization and lazy loading to minimizing render-blocking resources, explore a plethora of techniques that enhance user experience and ensure your sites load swiftly across all devices.",
+      "content": "In the competitive online landscape..."
+    },
+    {
+      "id": 4,
+      "title": "The Future of User Interface Design",
+      "author": "Tomislav Chatgpt",
+      "date": "2023-08-18",
+      "category": "Technology",
+      "tags": ["front-end", "UI/UX", "design", "innovation"],
+      "short_preview": "Step into the realm of user interface design and catch a glimpse of the trends and innovations shaping the digital experiences of tomorrow. From AI-driven personalization to immersive augmented reality interfaces, explore the exciting possibilities that await in the ever-evolving world of UI/UX.",
+      "content": "User interface design is at the forefront..."
+    }
+  ]
+}
