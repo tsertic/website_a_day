@@ -4,6 +4,7 @@ import { Roboto, Poppins } from "next/font/google";
 import ThemeProviderC from "./_components/util/ThemeProvider";
 import { ThemeSwitcher } from "./_components/UI/ThemeSwitcher";
 import { Navigation } from "./_components/Navigation/Navigation";
+import { RQProvider } from "./_components/util/RQProvider";
 
 const roboto = Roboto({
   weight: ["400", "900"],
@@ -29,11 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} ${poppins.variable}`}>
-        <ThemeProviderC>
-          <ThemeSwitcher />
-          <Navigation />
-          {children}
-        </ThemeProviderC>
+        <RQProvider>
+          <ThemeProviderC>
+            <ThemeSwitcher />
+            <Navigation />
+            {children}
+          </ThemeProviderC>
+        </RQProvider>
       </body>
     </html>
   );
