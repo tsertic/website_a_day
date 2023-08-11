@@ -7,7 +7,7 @@ import { Navigation } from "./_components/Navigation/Navigation";
 import { RQProvider } from "./_components/util/RQProvider";
 
 const roboto = Roboto({
-  weight: ["400", "900"],
+  weight: ["400", "700", "900"],
   subsets: ["latin"],
   variable: "--font-roboto",
 });

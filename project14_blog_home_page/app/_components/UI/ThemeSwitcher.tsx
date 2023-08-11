@@ -20,7 +20,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <div
-      className={`absolute right-[2rem] top-[50%] py-1  -translate-y-1/2 shadow-md border-[1px] border-base-content h-[45px] w-fit  border-1 bg-base-200 flex flex-col p-1 rounded-lg`}
+      className={`fixed z-50 right-[2rem] top-[50%] py-1  -translate-y-1/2 shadow-md border-[1px] border-base-content h-[45px] w-fit  border-1 bg-base-200 flex flex-col p-1 rounded-lg`}
     >
       <div
         className={`${

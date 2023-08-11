@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,12 +14,13 @@ const config: Config = {
     },
     fontSize: {
       "nav-link": [".8rem", {}],
-      sm: [".8rem", {}],
+      xs: [".8rem", {}],
+      sm: [".875rem", {}],
       md: ["1rem", {}],
       lg: ["1.2rem", {}],
       xl: ["2rem", {}],
       body: ["1rem", {}],
-      title: ["2rem", {}],
+      title: ["2.2rem", { fontWeight: 700, lineHeight: "50px" }],
     },
     backgroundSize: {
       auto: "auto",
@@ -35,12 +37,20 @@ const config: Config = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["[data-theme=light]"],
-          primary: "#ffa387",
+          primary: "#fe4f70",
           "primary-content": "#fff",
+          "base-300": "#9fAABB",
+          "base-content": "#203656",
         },
       },
-      "dark",
-      "system",
+      {
+        dark: {
+          ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
+          primary: "#ffa387",
+          "primary-content": "#fff",
+          "base-300": "#9fAABB",
+        },
+      },
     ],
   },
 };
