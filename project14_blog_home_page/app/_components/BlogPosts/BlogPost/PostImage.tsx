@@ -11,7 +11,9 @@ export const PostImage: React.FC<IPostImage> = ({ imageUrl, category }) => {
     <div className="relative">
       <div className="w-full  rounded-lg overflow-hidden cursor-pointer ">
         <div className="absolute top-5 left-5 z-50">
-          <GradientButton>{category}</GradientButton>
+          <GradientButton>
+            <div className="px-2 text-sm">{category}</div>
+          </GradientButton>
         </div>
         <Image
           src="/images/post-placeholder.jpg"
