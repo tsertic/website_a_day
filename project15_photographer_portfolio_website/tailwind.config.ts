@@ -12,6 +12,7 @@ const config: Config = {
     colors: {
       "base-100": "#fff",
       "base-content": "#000",
+      primary: "#fa4413",
     },
     extend: {
       fontFamily: {
