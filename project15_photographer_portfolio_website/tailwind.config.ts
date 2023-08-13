@@ -10,7 +10,7 @@ const config: Config = {
 
   theme: {
     colors: {
-      "base-100": "#fff",
+      "base-100": "#feffee",
       "base-content": "#000",
       primary: "#fa4413",
     },

@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Open_Sans } from "next/font/google";
 import { ThemeProviderC } from "./_components/utils/ThemeProviderC";
+import { RQProvider } from "./_components/utils/RQProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 const openSans = Open_Sans({
@@ -23,7 +24,9 @@ export default function RootLayout({
       <body
         className={`${openSans.className} font-sans bg-base-100 text-base-content dark:text-base-100 dark:bg-base-content`}
       >
-        <ThemeProviderC>{children}</ThemeProviderC>
+        <RQProvider>
+          <ThemeProviderC>{children}</ThemeProviderC>
+        </RQProvider>
       </body>
     </html>
   );
