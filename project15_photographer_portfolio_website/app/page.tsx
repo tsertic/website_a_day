@@ -35,10 +35,10 @@ export default function Home() {
           {gallery.map((galleryItem, i) => {
             let gridType =
               squareTypeArray[i] === "medium"
-                ? "col-span-2 row-span-2"
+                ? "md:col-span-2 md:row-span-2"
                 : squareTypeArray[i] === "small"
-                ? "col-span-1 row-span-1"
-                : "col-span-2 row-span-1";
+                ? "md:col-span-1 md:row-span-1"
+                : "md:col-span-2 md:row-span-1";
             let imgSize =
               gridType === "medium"
                 ? { w: 700, h: 600 }
@@ -46,7 +46,10 @@ export default function Home() {
                 ? { w: 350, h: 300 }
                 : { w: 700, h: 300 };
             return (
-              <div key={galleryItem.id} className={`${gridType} `}>
+              <div
+                key={galleryItem.id}
+                className={`col-span-4 row-span-4 ${gridType} `}
+              >
                 <Image
                   placeholder="blur"
                   blurDataURL="/images/blured.webp"
@@ -61,6 +64,9 @@ export default function Home() {
           })}
         </div>
       )}
+      <footer className="mt-[40px] text-center">
+        <a href="mailto:jondoe@photography.com">jondoe@photography.com</a>
+      </footer>
     </main>
   );
 }
