@@ -1,0 +1,68 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "name": "Flower in Desert",
+      "category": ["nature", "artistic"],
+      "uploaded": "08-02-2023",
+      "description": "Vibrant flower in a desert landscape on a sunny day",
+      "imgName": "1.png"
+    },
+    {
+      "id": 2,
+      "name": "Sunset Over Mountains",
+      "category": ["nature", "scenic"],
+      "uploaded": "08-05-2023",
+      "description": "Captivating sunset view from atop majestic mountains",
+      "imgName": "2.png"
+    },
+    {
+      "id": 3,
+      "name": "City Lights at Night",
+      "category": ["urban", "night"],
+      "uploaded": "08-10-2023",
+      "description": "Dazzling city lights illuminating the night skyline",
+      "imgName": "3.png"
+    },
+    {
+      "id": 4,
+      "name": "Ocean Waves",
+      "category": ["nature", "water"],
+      "uploaded": "08-15-2023",
+      "description": "Crashing ocean waves against rocky shoreline",
+      "imgName": "4.png"
+    },
+    {
+      "id": 5,
+      "name": "Vintage Street",
+      "category": ["urban", "nostalgia"],
+      "uploaded": "08-20-2023",
+      "description": "Charming vintage street with classic architecture",
+      "imgName": "5.png"
+    },
+    {
+      "id": 6,
+      "name": "Enchanted Forest",
+      "category": ["nature", "fantasy"],
+      "uploaded": "08-25-2023",
+      "description": "Mystical scene of an enchanted forest with magical creatures",
+      "imgName": "6.png"
+    },
+    {
+      "id": 7,
+      "name": "Countryside Serenity",
+      "category": ["nature", "serene"],
+      "uploaded": "08-30-2023",
+      "description": "Tranquil countryside landscape with rolling hills and a serene lake",
+      "imgName": "7.png"
+    },
+    {
+      "id": 8,
+      "name": "Modern Architecture",
+      "category": ["urban", "architecture"],
+      "uploaded": "09-02-2023",
+      "description": "Sleek and innovative modern architectural design",
+      "imgName": "8.png"
+    }
+  ]
+}

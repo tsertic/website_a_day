@@ -7,14 +7,12 @@ export default function Home() {
       <div className="flex justify-between gap-10">
         <h1 className="flex-1">Joe Doe</h1>
         <p className="flex-1">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
-          necessitatibus voluptates aliquam, quidem dolorem nisi nemo amet magni
-          exercitationem sunt a eius debitis voluptatem reprehenderit
-          blanditiis? Similique commodi perferendis veritatis excepturi repellat
-          nemo vel dolore quam a, maxime dolorem quaerat?
+          Step into a world of visual storytelling through my lens. This
+          portfolio is a curation of moments frozen in time, each image telling
+          a unique story. Join me in exploring the beauty, emotion, and artistry
+          captured through the art of photography.
         </p>
       </div>
-      <ThemeSwitch />
     </main>
   );
 }
