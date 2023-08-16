@@ -1,8 +1,8 @@
 function App() {
   return (
     <>
-      <div className="w-full bg-purple-400">
-        <h1 className="text-center">Todo App 4</h1>
+      <div className="w-full max-w-xl">
+        <h1 className="text-center">Notes</h1>
       </div>
     </>
   );
