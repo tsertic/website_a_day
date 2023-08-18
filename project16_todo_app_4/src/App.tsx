@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux";
+import { IPosts } from "./types/posts.t";
 function App() {
+  const posts = useSelector((state: { posts: IPosts }) => state.posts.posts);
+  console.log(posts);
   return (
-    <>
-      <div className="w-full max-w-xl">
-        <h1 className="text-center">Notes</h1>
-      </div>
-    </>
+    <main className="min-h-screen w-full bg-slate-200">
+      <p>{posts && posts.length}</p>
+    </main>
   );
 }
 

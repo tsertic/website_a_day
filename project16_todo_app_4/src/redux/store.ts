@@ -1,3 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-
-export default configureStore({ reducer: {} });
+import { counterReducer } from "./feauteres/counter.slice";
+import { postsReducer } from "./feauteres/posts.slice";
+export default configureStore({
+  reducer: {
+    counter: counterReducer,
+    posts: postsReducer,
+  },
+});
