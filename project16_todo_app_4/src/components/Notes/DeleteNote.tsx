@@ -15,7 +15,7 @@ export const DeleteNote: React.FC<IDeleteNote> = ({ note, closeModal }) => {
 
   return (
     <div>
-      <h1 className="text-center text-xl mb-4 text-primary">Edit Note</h1>
+      <h1 className="text-center text-xl mb-4 text-primary">Are you sure?</h1>
       <div className="flex gap-2 justify-around">
         <button
           className="btn btn-outline border-primary "
