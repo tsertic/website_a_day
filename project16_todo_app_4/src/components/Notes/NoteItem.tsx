@@ -4,6 +4,8 @@ import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { updateNote } from "../../redux/feauteres/notes.slice";
 import { Modal } from "../UI/Modal";
+import { EditNoteForm } from "./EditNoteForm";
+import { DeleteNote } from "./DeleteNote";
 interface INoteItem {
   note: INote;
 }
@@ -41,17 +43,13 @@ export const NoteItem: React.FC<INoteItem> = ({ note }) => {
           size={18}
           className="cursor-pointer hover:text-primary"
         />
+        <Modal showModal={showEditModal} tglModal={tglEditModal}>
+          <EditNoteForm note={note} closeModal={tglEditModal} />
+        </Modal>
+        <Modal showModal={showDeleteModal} tglModal={tglDeleteModal}>
+          <DeleteNote note={note} closeModal={tglDeleteModal} />
+        </Modal>
       </td>
-      <Modal showModal={showEditModal} tglModal={tglEditModal}>
-        <div>
-          <h1>Test</h1>
-        </div>
-      </Modal>
-      <Modal showModal={showDeleteModal} tglModal={tglDeleteModal}>
-        <div>
-          <h1>Delete</h1>
-        </div>
-      </Modal>
     </tr>
   );
 };

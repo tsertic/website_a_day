@@ -6,13 +6,11 @@ interface IModal {
 }
 export const Modal: React.FC<IModal> = ({ showModal, children, tglModal }) => {
   return (
-    <dialog id="my_modal_2" className={`modal ${showModal && "modal-open"}`}>
-      <form method="dialog" className="modal-box">
-        {children}
-      </form>
+    <div id="my_modal_2" className={`modal ${showModal && "modal-open"}`}>
+      <div className="modal-box">{children}</div>
       <form method="dialog" className="modal-backdrop" onClick={tglModal}>
         <button>close</button>
       </form>
-    </dialog>
+    </div>
   );
 };

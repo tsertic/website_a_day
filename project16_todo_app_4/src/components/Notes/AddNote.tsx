@@ -22,7 +22,7 @@ export const AddNote = () => {
   return (
     <form
       onSubmit={handleFormSubmit}
-      className="w-full flex gap-5 justify-around"
+      className="w-full flex flex-col sm:flex-row gap-2 sm:gap-4 justify-around"
     >
       <input
         type="text"
