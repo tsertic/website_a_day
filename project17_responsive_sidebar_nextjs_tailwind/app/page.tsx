@@ -1,9 +1,5 @@
 import { Sidebar } from "./_components/Sidebar";
 
 export default function Home() {
-  return (
-    <main className="">
-      <Sidebar />
-    </main>
-  );
+  return <main className=""></main>;
 }

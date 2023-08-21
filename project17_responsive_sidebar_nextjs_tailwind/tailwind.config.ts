@@ -11,7 +11,7 @@ const config: Config = {
       "base-100": "#fff",
       "base-200": "#e1e1e1",
       "base-content": "#111",
-      primary: "#24ffba",
+      primary: "#2412ba",
     },
     extend: {
       backgroundImage: {
