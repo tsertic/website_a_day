@@ -7,6 +7,7 @@ import {
 } from "react-icons/bs";
 import { IoAnalyticsSharp } from "react-icons/io5";
 import { SidebarNavItem } from "./SidebarNavItem";
+import { FiLogOut } from "react-icons/fi";
 export const MAIN_NAVIGATION = [
   {
     name: "dashboard",
@@ -36,10 +37,25 @@ export const MAIN_NAVIGATION = [
 ];
 export const SidebarNavigation = () => {
   return (
-    <ul className="pl-2 flex flex-col gap-2">
-      {MAIN_NAVIGATION.map((navItem) => {
-        return <SidebarNavItem key={navItem.name} navItem={navItem} />;
-      })}
-    </ul>
+    <div className="h-full pl-2 py-2 flex flex-col justify-between ">
+      <ul className=" flex flex-col gap-2">
+        {MAIN_NAVIGATION.map((navItem) => {
+          return <SidebarNavItem key={navItem.name} navItem={navItem} />;
+        })}
+      </ul>
+      <div>
+        <button
+          onClick={() => {
+            console.log("logout user");
+          }}
+          className="flex items-center px-4 py-2 w-full max-w-[150px] gap-2 hover:bg-primary/90 hover:text-base-100 rounded-md"
+        >
+          <span>
+            <FiLogOut />
+          </span>{" "}
+          Log Out
+        </button>
+      </div>
+    </div>
   );
 };
