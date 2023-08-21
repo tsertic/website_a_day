@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Responsive sidebar",
-  description: " Tailwind | headlesui/react | daisyui ",
+  description: " Tailwind  ",
 };
 
 export default function RootLayout({
