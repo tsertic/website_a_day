@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-base-100: 255 255 255;
+  --color-base-200: 175 175 175;
+  --color-base-content: 25 23 32;
+  --color-primary: 255 83 49;
+  --color-accent: 0 155 0;
+  --color-text: 33 33 33;
+  --color-success: 0 200 81;
+  --color-info: 51 181 229;
+  --color-warn: 255 187 51;
+  --color-error: 254 78 78;
+}
+
+:root[class~="dark"] {
+  --color-base-100: 17 17 17;
+  --color-base-200: 30 30 30;
+  --color-base-content: 240 240 240;
+  --color-primary: 255 83 49;
+  --color-accent: 0 155 0;
+  --color-text: 33 33 33;
+  --color-success: 0 200 81;
+  --color-info: 51 181 229;
+  --color-warn: 255 187 51;
+  --color-error: 254 78 78;
+}
