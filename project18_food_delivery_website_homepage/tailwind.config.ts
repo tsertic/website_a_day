@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     colors: {
       primary: "rgb(var(--color-primary) / <alpha-value>)",
+      "primary-200": "rgb(var(--color-primary-200) / <alpha-value>)",
       accent: "rgb(var(--color-accent) / <alpha-value>)",
-      "primary-content": "rgb(var(--color-primary-content)) / <alpha-value>",
+      "primary-content": "rgb(var(--color-primary-content) / <alpha-value>)",
       "base-100": "rgb(var(--color-base-100) / <alpha-value>)",
       "base-200": "rgb(var(--color-base-200) / <alpha-value>)",
       "base-content": "rgb(var(--color-base-content) / <alpha-value>)",
