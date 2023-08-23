@@ -7,11 +7,11 @@ import { Button } from "../UI/Button";
 import { NavListDesktop } from "./NavListDesktop";
 import { NavMobileModal } from "./NavMobileModal";
 export const Navigation = () => {
-  const [showMobileNav, setShowMobileNav] = useState(true);
+  const [showMobileNav, setShowMobileNav] = useState(false);
   return (
     <>
-      <div className="w-full fixed top-5 ">
-        <nav className="max-w-[1200px] w-full mx-auto px-2 flex justify-between">
+      <div className="w-full fixed  py-3 bg-base-100 z-30 shadow-md">
+        <nav className="relative max-w-[1200px] w-full mx-auto  px-2 flex justify-between">
           <div>
             <Image src="logo.svg" width={42} height={42} alt="logo" />
           </div>

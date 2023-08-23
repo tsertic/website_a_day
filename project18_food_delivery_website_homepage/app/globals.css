@@ -4,7 +4,7 @@
 
 :root {
   --color-base-100: 255 255 255;
-  --color-base-200: 175 175 175;
+  --color-base-200: 240 240 240;
   --color-base-content: 25 23 32;
 
   --color-primary: 255 83 49;
@@ -22,7 +22,7 @@
 :root[class~="dark"] {
   --color-base-100: 17 17 17;
   --color-base-200: 30 30 30;
-  --color-base-content: 240 240 240;
+  --color-base-content: 245 245 245;
   --color-primary: 255 83 49;
   --color-primary-200: 255 113 99;
 

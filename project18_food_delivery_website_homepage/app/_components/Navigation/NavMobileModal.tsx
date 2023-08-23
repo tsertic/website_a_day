@@ -21,7 +21,7 @@ export const NavMobileModal: React.FC<INavMobileModal> = ({
         showModal
           ? "top-0  w-screen h-screen"
           : "top-[-200%] bg-base-200 w-screen h-screen"
-      }  md:hidden  transition-all duration-500  `}
+      }  md:hidden  transition-all duration-500  z-40`}
     >
       <button
         onClick={() => closeModal()}
