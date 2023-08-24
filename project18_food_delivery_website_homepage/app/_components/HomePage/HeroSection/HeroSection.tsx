@@ -8,7 +8,7 @@ export const HeroSection = () => {
     <div className="flex flex-col lg:flex-row gap-[50px] lg:gap-[80px] justify-between">
       <div className="flex-1 ">
         <div className="mb-[32px]">
-          <h1 className="font-bold text-[30px] md:text-[50px] lg:text-[55px] mb-4">
+          <h1 className="font-bold text-[30px] text-center lg:text-start md:text-[50px] lg:text-[55px] mb-4">
             Your Favorite Food Delivery Partner
           </h1>
           <p className="text-[1.15rem]">
@@ -17,7 +17,7 @@ export const HeroSection = () => {
           </p>
         </div>
         <div>
-          <div className="relative max-w-[450px] w-full bg-base-200 rounded-[30px] p-4 flex justify-between">
+          <div className="relative lg:max-w-[450px] w-full bg-base-200 rounded-[30px] p-4 flex justify-between">
             <input
               type="text"
               className=" bg-transparent outline-none"
@@ -25,7 +25,7 @@ export const HeroSection = () => {
             />
             <Button>Order Now</Button>
           </div>
-          <div className="flex mt-[35px] gap-[35px]">
+          <div className="flex justify-center lg:justify-start mt-[35px] gap-[35px]">
             <StoreButton path="#">
               <Image
                 src="/apple-store.svg"
