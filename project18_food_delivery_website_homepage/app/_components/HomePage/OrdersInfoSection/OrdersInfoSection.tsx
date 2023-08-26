@@ -13,7 +13,7 @@ export const OrdersInfoSection = () => {
           Welcome to The Biggest Network of Food Ordering & Delivery
         </p>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-[45px]">
         <div className="flex justify-end flex-col md:flex-row items-center gap-[30px] ">
           <div className="flex  gap-[15px]  md:gap-[32px] ">
             <OrderCard
@@ -50,16 +50,16 @@ export const OrdersInfoSection = () => {
             />
           </div>
         </div>
-        <div className="flex justify-start flex-col md:flex-row items-center  ">
+        <div className="flex justify-start flex-col-reverse md:flex-row items-center  ">
           <div className="w-full max-w-[600px] p-[32px] rounded-[30px]">
             <Image
-              className="mb-[30px]"
+              className="mb-[30px] w-[30px] h-[30px] md:w-[60px] md:h-[60px]"
               src="/images/black-quotation.svg"
               width={60}
               height={60}
               alt="scooter decorative image"
             />
-            <p className=" w-full text-2xl font-regular ">
+            <p className=" w-full text-xl md:text-2xl font-regular ">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.”
             </p>
@@ -69,20 +69,20 @@ export const OrdersInfoSection = () => {
             <div className="flex  gap-[15px]  md:gap-[32px] ">
               <OrderCard
                 cardData={{
-                  iconSrc: "/decorative-icons/pizza.svg",
-                  name: "pizza",
+                  iconSrc: "/decorative-icons/pasta.svg",
+                  name: "pasta",
                 }}
               />
               <OrderCard
                 cardData={{
-                  iconSrc: "/decorative-icons/burger.svg",
-                  name: "burger",
+                  iconSrc: "/decorative-icons/salad.svg",
+                  name: "salad",
                 }}
               />
               <OrderCard
                 cardData={{
-                  iconSrc: "/decorative-icons/sushi.svg",
-                  name: "sushi",
+                  iconSrc: "/decorative-icons/deserts.svg",
+                  name: "deserts",
                 }}
               />
             </div>
