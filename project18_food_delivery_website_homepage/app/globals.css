@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer components {
+  .section-title {
+    @apply text-3xl mb-4  lg:text-5xl text-center capitalize font-bold;
+  }
+}
 :root {
   --color-base-100: 255 255 255;
   --color-base-200: 240 240 240;

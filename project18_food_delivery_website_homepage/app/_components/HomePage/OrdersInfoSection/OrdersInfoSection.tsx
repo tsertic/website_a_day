@@ -5,7 +5,7 @@ export const OrdersInfoSection = () => {
   return (
     <section>
       <div className="mb-[40px]">
-        <h1 className="text-3xl mb-4  lg:text-5xl text-center capitalize font-bold">
+        <h1 className="section-title">
           More Than <span className="text-primary">10,000</span> Dishes <br />{" "}
           To Order!
         </h1>
