@@ -1,3 +1,4 @@
+import { ClientsFeedbackSection } from "./_components/HomePage/ClientsFeedbackSection/ClientsFeedbackSection";
 import { HeroSection } from "./_components/HomePage/HeroSection/HeroSection";
 import { HowOrderSection } from "./_components/HomePage/HowOrderSection/HowOrderSection";
 import { OrdersInfoSection } from "./_components/HomePage/OrdersInfoSection/OrdersInfoSection";
@@ -9,6 +10,7 @@ export default function Home() {
         <HeroSection />
         <OrdersInfoSection />
         <HowOrderSection />
+        <ClientsFeedbackSection />
       </div>
     </main>
   );

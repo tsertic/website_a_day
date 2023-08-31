@@ -5,6 +5,9 @@
   .section-title {
     @apply text-3xl mb-4  lg:text-5xl text-center capitalize font-bold;
   }
+  .round-button {
+    @apply rounded-full p-1 shadow-sm hover:shadow-md;
+  }
 }
 :root {
   --color-base-100: 255 255 255;

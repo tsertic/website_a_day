@@ -3,7 +3,7 @@ import { FoodCard } from "../../cards/FoodCard";
 
 export const HowOrderSection = () => {
   return (
-    <div>
+    <section>
       <h1 className="section-title mb-[40px] lg:mb-[60px]">How To Order</h1>
       <div className="flex justify-center flex-wrap gap-[50px] lg:flex-nowrap lg:gap-[125px] ">
         <FoodCard
@@ -35,6 +35,6 @@ export const HowOrderSection = () => {
           }}
         />
       </div>
-    </div>
+    </section>
   );
 };
