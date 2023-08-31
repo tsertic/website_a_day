@@ -2,6 +2,7 @@ import React from "react";
 import { StoreButton } from "../../UI/StoreButton";
 import Image from "next/image";
 import { Button } from "../../UI/Button";
+import { RoundInput } from "../../UI/RoundInput";
 
 export const HeroSection = () => {
   return (
@@ -17,14 +18,12 @@ export const HeroSection = () => {
           </p>
         </div>
         <div>
-          <div className="relative lg:max-w-[450px] w-full bg-base-200 rounded-[30px] p-4 flex justify-between">
-            <input
-              type="text"
-              className=" bg-transparent outline-none"
-              placeholder="Enter your delivery location"
-            />
-            <Button>Order Now</Button>
-          </div>
+          <RoundInput
+            placeholderText="Enter your delivery location"
+            bgColor="bg-base-200"
+            buttonText="Order Now"
+          />
+
           <div className="flex justify-center lg:justify-start mt-[35px] gap-[35px]">
             <StoreButton path="#">
               <Image
